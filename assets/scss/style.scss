@@ -1,0 +1,587 @@
+$primary-color: #618c40;
+$secondary-color: #cce29b;
+$terciary-color: #520c41;
+$neutral-color: #f0f6d9;
+$dark-color: #1f0318;
+$highlight-color: #d56fa9;
+$logo-green: #042e40;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("../img/Flower-pattern.jpg");
+  background-size: 300px 200px;
+  background-repeat: repeat;
+  background-position: top left;
+}
+
+.centered-div {
+  width: 85%;
+  margin: 1em auto;
+}
+
+header {
+  background-color: $secondary-color;
+  border-radius: 1em 1em 0 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.header__logo {
+  width: 8em;
+  height: auto;
+  margin: 0.5em;
+  aspect-ratio: 1/1;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__title {
+  color: $logo-green;
+  font-family: "Quintessential", serif;
+  font-size: 2.5rem;
+}
+
+.header__slogan {
+  color: $terciary-color;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 4rem;
+  background-color: $terciary-color;
+  border-radius: 0 0 1rem 1rem;
+  padding: 0 2rem;
+}
+
+.nav {
+  &__logo {
+    width: 100px;
+    height: 3rem;
+  }
+
+  &__img {
+    height: 3em;
+    width: auto;
+  }
+
+  &__toggle {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: $neutral-color;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__menu {
+    display: flex;
+
+    @media (max-width: 768px) {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $terciary-color;
+      padding: 1em 0;
+      z-index: 10;
+    }
+  }
+
+  &__menu--active {
+    display: flex !important;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: $neutral-color;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $highlight-color;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    height: 1em;
+  }
+
+}
+
+.wsp__button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 5%;
+  right: 2.5%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.wsp__img {
+  width: 100%;
+  height: auto;
+}
+
+
+.about {
+  &__content {
+    display: flex;
+    width: 100%;
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+  }
+
+  &__container {
+    width: 60%;
+    color: $dark-color;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-right: 1rem;
+  }
+
+  &__text {
+    width: 100%
+  }
+
+  &__title {
+    margin-top: 4em;
+  }
+
+  &__description {
+    margin-bottom: .5rem;
+  }
+
+  &__img {
+    width: 35%;
+    object-fit: cover;
+    border-radius: 0.5em;
+  }
+}
+
+
+
+
+
+
+.contact__logo {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+}
+
+.contact__content {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+}
+
+
+.contact__text {
+  width: 60%;
+  color: $dark-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid $dark-color;
+    border-radius: 0.5em;
+  }
+
+  button {
+    margin-top: 1em;
+    padding: 0.7em;
+    background-color: $primary-color;
+    color: $neutral-color;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.contact__img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+
+.hero {
+  position: relative;
+}
+
+.hero__img {
+  max-width: 100%;
+  border-radius: 1em;
+}
+
+.hero__title {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  background-color: $terciary-color;
+  color: $neutral-color;
+  padding: 1.5em;
+}
+
+.catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  background-color: $neutral-color;
+  gap: 1em;
+  position: relative;
+  overflow: hidden;
+  align-items: stretch;
+
+  &__container {
+    width: 25%;
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container--a {
+    background-color: $primary-color;
+    color: $neutral-color;
+  }
+
+  &__container--b {
+    background-color: $dark-color;
+    color: $neutral-color;
+  }
+
+  &__container--c {
+    background-color: $terciary-color;
+    color: $neutral-color;
+  }
+
+  &__button {
+    margin: 3em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: $neutral-color;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &__slider {
+    width: 4%;
+    height: 450px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__slider--a {
+    background-color: $primary-color;
+    color: $neutral-color;
+  }
+
+  &__slider--b {
+    background-color: $dark-color;
+    color: $neutral-color;
+  }
+
+  &__slider--c {
+    background-color: $terciary-color;
+    color: $neutral-color;
+  }
+
+}
+
+.section__a {
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $terciary-color;
+  }
+}
+
+.section__b {
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $highlight-color;
+  }
+}
+
+
+.section__c {
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $primary-color;
+  }
+}
+
+
+
+.card__container {
+  width: 250px;
+  height: 450px;
+  border-radius: 0px;
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__text {
+  justify-content: left;
+  margin-top: 0.5em;
+}
+
+.card__button {
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 1em;
+  background-color: $secondary-color;
+  position: absolute;
+  right: 0.01em;
+  bottom: 0.01em;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    background-color: $neutral-color;
+    padding: 2em;
+    border-radius: 1em;
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    gap: 2em;
+  }
+
+  &__img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  &__text {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+    color: $dark-color;
+  }
+
+  &__title {
+    margin-top: 5em;
+  }
+
+  &__description {
+    margin-top: 1em;
+  }
+
+  &__price {
+    margin-top: 2em;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  &__button--a {
+    margin: 3em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: $primary-color;
+    color: $neutral-color;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  &__button--b {
+    margin: 3em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: $dark-color;
+    color: $neutral-color;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  &__button--c {
+    margin: 3em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: $terciary-color;
+    color: $neutral-color;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+
+
+}
+
+@media (max-width: 748px) {
+  .hero__title {
+    padding: 1em;
+  }
+
+  .catalogue {
+    gap: 0;
+
+    &__container {
+      width: 8rem;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    &__button {
+      width: 70%;
+    }
+  }
+
+  .slider__text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 448px) {
+  .hero__title {
+    padding: 0.5rem;
+  }
+
+  .catalogue {
+    &__container {
+      width: 95%;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    &__button {
+      width: 70%;
+    }
+  }
+
+  .slider__text {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: $dark-color;
+  border-radius: 1em;
+  margin: 0;
+  color: $neutral-color;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 2rem;
+}
