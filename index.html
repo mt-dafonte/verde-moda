@@ -1,460 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verde Moda</title>
+    <title>VerdeModa</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header class="centered-div">
+    <header class="header">
         <div class="header__container">
-            <img class="header__logo" src="assets/img/VM_Logo_Orq_Color-01.png" alt="Logo Verde Moda">
+            <img class="header__logo" src="assets/img/VM_Logo_Orq_Color-01.png" alt="Logo VerdeModa">
             <div class="header__text">
                 <h1 class="header__title">VerdeModa</h1>
                 <h3 class="header__slogan">Viste el cambio que quieres ver</h3>
             </div>
         </div>
+        <div>
+            <nav class="nav">
+                <img class="nav__logo" src="assets/img/VM_Logo_Orq_neutral-p-04.png" alt="">
 
-
-        <nav class="navbar nav">
-            <div class="nav__logo">
-                <a href="index.html">
-                    <img class="nav__img" src="assets/img/VM_Logo_Orq_neutral-p-04.png" alt="Logo Verde Moda neutro">
-                </a>
-            </div>
-
-            <button class="nav__toggle" aria-label="Abrir menú">&#9776;</button>
-
-
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item menu__link" data-modal="nosotros">
-                        <a class="nav__link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Ofertas</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Catálogo</a>
-                    </li>
-                    <li class="nav__item menu__link" data-modal="contacto">
-                        <a class="nav__link" href="#">Contacto</a>
-                    </li>
+                <ul class="nav__menu">
+                    <li class="nav__item">Nosotros</li>
+                    <li class="nav__item">Galería</li>
+                    <li class="nav__item">Contacto</li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <section class="about">
-        <div class="modal" data-modal="nosotros">
-            <div class="modal__content">
-                <span class="modal__close">&times;</span>
-                <div class="about__content">
-                    <div>
-                        <img class="about__logo" src="assets/img/VM_Logo_Orq_Color-01.png" alt="">
-                    </div>
+    <main class="main">
 
-                    <div class="about__container">
-                        <h2 class="about__title">Acerca de Nosotros</h2>
-                        <div class="about__text">
-                            <p class="about__description">En <b>VerdeModa</b> creemos que la ropa que usas puede decir mucho
-                                más que una tendencia: puede ser
-                                una declaración de valores, por eso, nuestro compromiso es con la moda sustentable,
-                                ética y
-                                con propósito.</p>
-
-                            <p class="about__description">Buscamos ofrecer una alternativa real a la moda rápida:
-                                prendas diseñadas con conciencia,
-                                producidas en pequeñas cantidades, con materiales
-                                responsables y procesos que respetan el medioambiente. Cada uno de nuestros productos
-                                combina
-                                estilo, calidad y respeto por las personas que lo hacen posible.</p>
-
-                            <p class="about__description"></p>Todos los productos de nuestro catálogo son elaborados con
-                            cuidado, detalles únicos y
-                            materiales nobles como algodón, lino, lana
-                            recuperada y fibras recicladas.</p>
-
-                            <p class="about__description"></p>En <b>VerdeModa</b>, cada prenda cuenta una historia de cambio.
-                            Una historia que tú también puedes
-                            vestir.</p>
-                        </div>
-                    </div>
-                    <img class="about__img" src="assets/img/nosotros-conjunto.webp" alt="Imagen sección nosotros">
-
-                </div>
-            </div>
+        <div class="wsp">
+        <a class="wsp__button" href="#" target="_blank">
+            <img class="wsp__button--img" src="assets/img/icon-whatsapp.png" alt="Whatsapp">
+        </a>
         </div>
-    </section>
 
 
+        <section class="article">
 
-    <section class="contact">
-        <div class="modal" data-modal="contacto">
-            <div class="modal__content">
-                <span class="modal__close">&times;</span>
-                <div class="contact__content">
-                    <div>
-                        <img class="contact__logo" src="assets/img/VM_Logo_Orq_Color-01.png" alt="">
-                    </div>
+            <div class="article__container">
+                <h2 class="article__title">Sobre nosotros</h2>
 
-                    <div class="contact__text">
-                        <h2 class="modal__title">Formulario de contacto</h2>
-                        <form class="contact__form" action="">
-                            <label for="nombre">Nombre:</label><br>
-                            <input type="text" name="nombre" id="nombre"><br>
-
-                            <label for="correo">Correo electrónico:</label><br>
-                            <input type="email" name="correo" id="correo"><br>
-
-                            <label for="mensaje">Mensaje:</label><br>
-                            <textarea name="mensaje" id="mensaje"></textarea><br>
-
-                            <button type="submit">Enviar</button>
-                        </form>
-                    </div>
-                    <img class="contact__img" src="assets/img/anillo -círculos2.webp" alt="Imagen sección contacto">
-
-                </div>
+                <p class="article__text">En <b>VerdeModa</b> creemos que la ropa que usas puede decir mucho más que una
+                    tendencia: puede ser una declaración de valores, por eso, nuestro compromiso es con la moda
+                    sustentable,
+                    ética y con propósito.
+                </p>
+                <p class="article__text">Buscamos ofrecer una alternativa real a la moda rápida: prendas diseñadas con
+                    conciencia, producidas en pequeñas cantidades, con materiales responsables y procesos que respetan
+                    el
+                    medioambiente. Cada uno de nuestros productos combina estilo, calidad y respeto por las personas que
+                    lo
+                    hacen posible.
+                </p>
+                <p class="article__text">Todos los productos de nuestro catálogo son elaborados con cuidado, detalles
+                    únicos y materiales nobles como algodón, lino, lana recuperada y fibras recicladas.
+                </p>
+                <p class="article__text">En <b>VerdeModa</b>, cada prenda cuenta una historia de cambio. Una historia
+                    que
+                    tú también puedes vestir.
+                </p>
             </div>
-        </div>
-    </section>
 
-
-    <a class="wsp__button" href="#" target="_blank">
-        <img class="wsp__img" src="assets/img/icon-whatsapp.png" alt="Whatsapp">
-    </a>
-
-
-    <main>
-        <section class="hero centered-div">
-            <img class="hero__img" src="assets/img/destaque.jpg" alt="">
-            <h2 class="hero__title">Ofertas de temporada</h2>
+            <img class="article__img" src="assets/img/destaque-recorte.jpg" alt="Imagen destaque">
         </section>
 
-        <section class="catalogue centered-div">
-
-            <div class="catalogue__container catalogue__container--a">
-                <h2 class="catalogue__text section__a" data-category="blusas">Blusas</h2>
-                <h2 class="catalogue__text section__a" data-category="sweaters">Sweaters</h2>
-                <h2 class="catalogue__text section__a" data-category="chaquetas">Chaquetas</h2>
-                <button class="catalogue__button" data-role="ver-todos">Ver todos</button>
-            </div>
-
-            <div class="card__container" data-category="blusas">
-                <img class="card__img" src="assets/img/blusa-susana.webp" alt="Blusa Geométrica">
-                <div class="card__text">
-                    <h3 class="card__product">Blusa Geométrica</h3>
-                    <p class="card__description">Blusa con inserción de tejido de punto</p>
-                    <h4 class="card__price">$29.900</h4>
-                </div>
-                <button class="card__button" data-modal="blusa1">+</button>
-            </div>
-
-            <div class="modal" data-modal="blusa1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/blusa-susana.webp" alt="Blusa Geométrica">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Blusa Geométrica</h2>
-                        <p class="modal__description">Blusa con inserción de tejido de punto</p>
-                        <p class="modal__description">Material: lino, viscosa, algodón</p>
-                        <p class="modal__description">Color: negro</p>
-                        <p class="modal__description">Talla única</p>
-                        <h4 class="modal__price">$29.900</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--a" data-role="agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card__container" data-category="sweaters">
-                <img class="card__img" src="assets/img/sweater-saul.webp" alt="Sweater Geométrica">
-                <div class="card__text">
-                    <h3 class="card__product">Sweater Geométrico</h3>
-                    <p class="card__description">Sweater con bloques de colores asimétricos.</p>
-                    <h4 class="card__price">$45.000</h4>
-                </div>
-                <button class="card__button" data-modal="sweater1">+</button>
-            </div>
-
-            <div class="modal" data-modal="sweater1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/sweater-saul.webp" alt="Sweater Geométrico">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Sweater Geométrico</h2>
-                        <p class="modal__description">Sweater con bloques de colores asimétricos.</p>
-                        <p class="modal__description">Material: viscosa</p>
-                        <p class="modal__description">Color: negro</p>
-                        <p class="modal__description">Talla única</p>
-                        <h4 class="modal__price">$45.000</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--a" data-role="agregar">Agregar</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card__container" data-category="chaquetas">
-                <img class="card__img" src="assets/img/chaleco-uaiz.webp" alt="Chaqueta Geométrica">
-                <div class="card__text">
-                    <h3 class="card__product">Chaqueta Geométrica</h3>
-                    <p class="card__description">Chaqueta con solapas rebajadas</p>
-                    <h4 class="card__price">$60.000</h4>
-                </div>
-                <button class="card__button" data-modal="chaqueta1">+</button>
-            </div>
-
-            <div class="modal" data-modal="chaqueta1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/chaleco-uaiz.webp" alt="Chaqueta Geométrica">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Chaqueta Geométrica</h2>
-                        <p class="modal__description">Chaqueta con solapas rebajadas</p>
-                        <p class="modal__description">Material: viscosa</p>
-                        <p class="modal__description">Color: azul</p>
-                        <p class="modal__description">Talla única</p>
-                        <h4 class="modal__price">$60.000</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--a" data-role="agregar">Agregar</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="catalogue__slider catalogue__slider--a">
-                <h2>></h2>
-            </div>
+        <section class="gallery">
+            <h2 class="gallery__title">Galería</h2>
+            <div class="gallery__container">
+                <img class="gallery__img" src="assets/img/blusa-susana.webp" alt="Blusa">
+                <img class="gallery__img" src="assets/img/chaleco-uaiz.webp" alt="Chaleco">
+                <img class="gallery__img" src="assets/img/sweater-saul.webp" alt="Sweater">
+                <img class="gallery__img" src="assets/img/pantalon-star.webp" alt="Pantalón">
+                <img class="gallery__img" src="assets/img/falda-gris.webp" alt="Falda">
+                <img class="gallery__img" src="assets/img/vestido-acqua.webp" alt="Vestido">
+                <img class="gallery__img" src="assets/img/aro-nicco.webp" alt="Aros">
+                <img class="gallery__img" src="assets/img/collar-negro.webp" alt="Collar">
+                <img class="gallery__img" src="assets/img/anillo-circulos.webp" alt="Anillo">
+                <img class="gallery__img" src="assets/img/anillo -círculos2.webp" alt="Anillo">
+           </div>
         </section>
 
-        <section class="catalogue centered-div">
-
-            <div class="catalogue__container catalogue__container--b">
-                <h2 class="catalogue__text section__b" data-category="pantalones">Pantalones</h2>
-                <h2 class="catalogue__text section__b" data-category="faldas">Faldas</h2>
-                <h2 class="catalogue__text section__b" data-category="vestidos">Vestidos</h2>
-                <button class="catalogue__button" data-role="ver-todos">Ver todos</button>
-            </div>
-
-            <div class="card__container" data-category="pantalones">
-                <img class="card__img" src="assets/img/pantalon-star.webp"
-                    alt="Pantalón a la cintura con pretina elasticada">
-                <div class="card__text">
-                    <h3 class="card__product">Pantalón liso</h3>
-                    <p class="card__description">Calce a la cintura con pretina elasticada</p>
-                    <h4 class="card__price">$59.900</h4>
+        <section class="contact">
+            <h2 class="contact__title">Contacto</h2>
+            <form class="contact__form">
+                <div class="contact__form--datos">
+                    <label class="form__label" for="">Nombre completo</label>
+                    <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                    <label class="form__label" for="">Fecha de nacimiento</label>
+                    <input class="form__input" type="date" name="edad" id="edad">
+                    <label class="form__label" for="">Correo electrónico</label>
+                    <input class="form__input" type="email" name="email" id="email" placeholder="ejemplo@tucorreo.com">
                 </div>
-                <button class="card__button" data-modal="pantalón1">+</button>
-            </div>
-
-            <div class="modal" data-modal="pantalón1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/pantalon-star.webp"
-                        alt="Pantalón a la cintura con pretina elasicada">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Pantalón liso</h2>
-                        <p class="modal__description">Calce a la cintura con pretina elasticada</p>
-                        <p class="modal__description">Material: gabardina de algodón</p>
-                        <p class="modal__description">Color: burdeo</p>
-                        <p class="modal__description">Talla 40</p>
-                        <h4 class="modal__price">$59.900</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--b" data-role="agregar">Agregar</button>
-                    </div>
-
+                <div class="contact__form--mensaje">
+                    <label class="form__label" for="mensaje">Mensaje</label>
+                    <textarea class="form__textarea" name="mensaje" id="mensaje"
+                        placeholder="Escribe aquí tu mensaje"></textarea>
                 </div>
-            </div>
-
-            <div class="card__container" data-category="faldas">
-                <img class="card__img" src="assets/img/falda-gris.webp" alt="Falda gris">
-                <div class="card__text">
-                    <h3 class="card__product">Falda gris</h3>
-                    <p class="card__description">Falda gris de borde amarillo.</p>
-                    <h4 class="card__price">$43.000</h4>
+                <div class="contact__form--button">
+                    <button class="contact__button">Enviar</button>
                 </div>
-                <button class="card__button" data-modal="falda1">+</button>
-            </div>
-
-            <div class="modal" data-modal="falda1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/falda-gris.webp" alt="Sweater Geométrico">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Falda gris</h2>
-                        <p class="modal__description">Falda gris de borde amarillo.</p>
-                        <p class="modal__description">Material: 100% lana BOT, recuperación de bodega Bellavista
-                            Oveja Tomé</p>
-                        <p class="modal__description">Color: gris</p>
-                        <p class="modal__description">Talla M</p>
-                        <h4 class="modal__price">$43.000</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--b" data-role="agregar">Agregar</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card__container" data-category="vestidos">
-                <img class="card__img" src="assets/img/vestido-acqua.webp" alt="Vestido Acqua">
-                <div class="card__text">
-                    <h3 class="card__product">Vestido Acqua</h3>
-                    <p class="card__description">Vestido cruzado estampado</p>
-                    <h4 class="card__price">$36.000</h4>
-                </div>
-                <button class="card__button" data-modal="vestido1">+</button>
-            </div>
-
-            <div class="modal" data-modal="vestido1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/vestido-acqua.webp" alt="Vestido Acqua">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Vestido Acqua</h2>
-                        <p class="modal__description">Vestido cruzado estampado</p>
-                        <p class="modal__description">Material: gasa de algodón</p>
-                        <p class="modal__description">Color: verde agua</p>
-                        <p class="modal__description">Talla 38</p>
-                        <h4 class="modal__price">$36.000</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--b" data-role="agregar">Agregar</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="catalogue__slider catalogue__slider--b">
-                <h2>></h2>
-            </div>
+            </form>
         </section>
 
-        <section class="catalogue centered-div">
-
-            <div class="catalogue__container catalogue__container--c">
-                <h2 class="catalogue__text section__c" data-category="aros">Aros</h2>
-                <h2 class="catalogue__text section__c" data-category="collares">Collares</h2>
-                <h2 class="catalogue__text section__c" data-category="anillos">Anillos</h2>
-                <button class="catalogue__button" data-role="ver-todos">Ver todos</button>
-            </div>
-
-            <div class="card__container" data-category="aros">
-                <img class="card__img" src="assets/img/aro-nicco.webp" alt="Aros triple">
-                <div class="card__text">
-                    <h3 class="card__product">Aros triple</h3>
-                    <p class="card__description">Aros tallados y modelados a mano</p>
-                    <h4 class="card__price">$29.900</h4>
+        <section>
+            <footer class="footer">
+                <h2 class="footer__title">Sucursal</h2>
+                <div class="footer__data">
+                    <p class="footer__text">Dirección: Apoquindo N°1234, Las Condes</p>
+                    <p class="footer__text">Teléfono: +56 9 1234 5678</p>
+                    <p class="footer__text">Correo: contacto@verdemoda.cl</p>
                 </div>
-                <button class="card__button " data-modal="aros1">+</button>
-            </div>
 
-            <div class="modal" data-modal="aros1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/aro-nicco.webp" alt="Aros triple">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Aros triple</h2>
-                        <p class="modal__description">Aros tallados y modelados a mano</p>
-                        <p class="modal__description">Material: plata, bronce y cobre con pátina negra</p>
-                        <p class="modal__description">Largo: 7cm</p>
-                        <h4 class="modal__price">$29.900</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--c" data-role="agregar">Agregar</button>
-                    </div>
-
+                <div class="footer__logo">
+                    <img class="footer__logo__img" src="assets/img/VM_Logo_Orq_neutral-p-04.png" alt="Logo VerdeModa">
                 </div>
-            </div>
 
-            <div class="card__container" data-category="collares">
-                <img class="card__img" src="assets/img/collar-negro.webp" alt="Collar negro">
-                <div class="card__text">
-                    <h3 class="card__product">Collar negro</h3>
-                    <p class="card__description">Collar termoformado a mano.</p>
-                    <h4 class="card__price">$33.000</h4>
+                <div class="footer__social">
+                    <img class="footer__icon" src="assets/img/icons/icon-instagram.png" alt="Instagram">
+                    <img class="footer__icon" src="assets/img/icons/icon-facebook.png" alt="Facebook">
+                    <img class="footer__icon" src="assets/img/icons/icon-x.png" alt="X">
+                    <img class="footer__icon" src="assets/img/icons/icon-youtube.png" alt="Youtube">
                 </div>
-                <button class="card__button" data-modal="collar1">+</button>
-            </div>
-
-            <div class="modal" data-modal="collar1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/collar-negro.webp" alt="Collar negro">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Collar negro</h2>
-                        <p class="modal__description">Collar termoformado a mano.</p>
-                        <p class="modal__description">Material: acrílico con cordón extensible</p>
-                        <p class="modal__description">Color: negro</p>
-                        <p class="modal__description">Largo: 60 a 80cm</p>
-                        <h4 class="modal__price">$33.000</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--c" data-role="agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card__container" data-category="anillos">
-                <img class="card__img" src="assets/img/anillo-circulos.webp" alt="Anillo círculos">
-                <div class="card__text">
-                    <h3 class="card__product">Anillo círculos</h3>
-                    <p class="card__description">Silueta elegante e innovadora</p>
-                    <h4 class="card__price">$26.000</h4>
-                </div>
-                <button class="card__button" data-modal="anillo1">+</button>
-            </div>
-
-            <div class="modal" data-modal="anillo1">
-                <div class="modal__content">
-                    <span class="modal__close">&times;</span>
-                    <img class="modal__img" src="assets/img/anillo-circulos.webp" alt="Anillo Círculos">
-                    <div class="modal__text">
-                        <h2 class="modal__title">Anillo Círculos</h2>
-                        <p class="modal__description">Silueta elegante e innovadora</p>
-                        <p class="modal__description">Material: cobre, bolsas plásticas recicladas</p>
-                        <p class="modal__description">Color: café con negro</p>
-                        <h4 class="modal__price">$26.000</h4>
-                    </div>
-                    <div>
-                    <button class="modal__button--c" data-role="agregar">Agregar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="catalogue__slider catalogue__slider--c">
-                <h2 class="slider__text">></h2>
-            </div>
+                <h4 class="footer__copyright">2025. VerdeModa.Derechos reservados</h4>
+            </footer>
         </section>
-
-
     </main>
-
-
-
-
-
-    <footer class="centered-div">
-        <div class="footer__container">
-            <p>Verde Moda. Derechos reservados. 2025</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
 
 </body>
 
