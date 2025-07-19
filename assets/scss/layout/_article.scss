@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins';
+
+
+
+.article {
+
+  width: 100%;
+  background-color: $neutral-color;
+  color: $terciary-color;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__title {
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+
+  &__container {
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+  }
+
+  &__img {
+
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
