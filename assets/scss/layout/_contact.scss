@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as mixins;
+
+
+.contact {
+    background-color: $terciary-color;
+    color: $secondary-color;
+    padding: 3rem;
+
+    &__title {
+        padding-bottom: 2rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+
+        &--datos {
+            width: 40%;
+            @include mixins.flex-center-column;
+        }
+
+        &--mensaje {
+            width: 50%;
+            @include mixins.flex-center-column;
+        }
+
+        &--button {
+            @include mixins.flex-center-column;
+            width: 10%;
+        }
+    }
+
+    &__button {
+        @include mixins.button-base($secondary-color, $highlight-color);
+        width: 100%;
+        align-self: center;
+    }
+
+    @media (max-width: 768px) {
+        &__form {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__form--datos,
+        &__form--mensaje {
+            width: 100%;
+        }
+
+        &__form--button {
+            width: 90%;
+        }
+    }
+}
