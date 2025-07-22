@@ -5,12 +5,32 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  background-image: url("../img/Flower-pattern.jpg");
+  background-position: top left;
+}
+
 a {
   text-decoration: none;
 }
 
-.header__container {
+.main__container {
+  width: 80%;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(150, 147, 147);
+  padding: 20px;
   background-color: #cce29b;
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  background-color: #cce29b;
+  margin-bottom: 50px;
+}
+.header__container {
   height: 9rem;
   display: flex;
   justify-content: center;
@@ -62,7 +82,6 @@ a {
 }
 
 .article {
-  width: 100%;
   background-color: #f0f6d9;
   color: #520c41;
   padding: 3rem;
@@ -113,6 +132,12 @@ a {
   gap: 1.2rem;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .gallery__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
 .gallery__img {
   width: 100%;
   aspect-ratio: 3/4;
@@ -154,7 +179,6 @@ a {
 }
 .contact__button {
   background-color: #cce29b;
-  padding: 0.5rem;
   color: #1f0318;
   border: none;
   border-radius: 0.3rem;
@@ -162,6 +186,11 @@ a {
   transition: background-color 0.3s ease;
   width: 100%;
   align-self: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-style: solid;
+  border-color: #618c40;
+  border-width: 0.2rem;
 }
 .contact__button:hover {
   background-color: #d56fa9;
@@ -180,11 +209,19 @@ a {
 }
 
 .footer {
+  height: 100px;
+  padding: 20px;
+  margin-top: 50px;
   background-color: #1f0318;
   color: #f0f6d9;
-  padding: 3rem;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 7rem;
+  }
 }
 .footer__title {
   padding-bottom: 2rem;
@@ -198,7 +235,8 @@ a {
   flex-wrap: wrap;
 }
 .footer__text {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
 }
 .footer__logo {
   width: 33%;
@@ -207,8 +245,20 @@ a {
   display: flex;
   justify-content: center;
 }
-.footer__logo__img {
-  height: 7rem;
+@media (max-width: 768px) {
+  .footer__logo {
+    width: 4.3rem;
+    height: 4.3rem;
+    background-color: #520c41;
+    border-radius: 50%;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    bottom: 8.5rem;
+  }
+}
+.footer__logo--img {
+  height: 3rem;
   cursor: pointer;
 }
 .footer__logo:hover {
@@ -221,7 +271,7 @@ a {
   justify-content: flex-end;
 }
 .footer__icon {
-  height: 3rem;
+  height: 1.5rem;
   margin-left: 1.5rem;
   cursor: pointer;
 }
@@ -230,23 +280,33 @@ a {
 }
 .footer__copyright {
   width: 100%;
-  padding: 1rem;
+  padding: 0;
   text-align: center;
+  font-size: 0.75rem;
+  position: relative;
+  bottom: 20px;
+}
+@media (max-width: 768px) {
+  .footer__copyright {
+    position: relative;
+    bottom: 5rem;
+    color: #1f0318;
+    padding-bottom: 1rem;
+  }
 }
 @media (max-width: 768px) {
   .footer__data {
     width: 100%;
   }
   .footer__logo {
-    width: 100%;
     margin-bottom: 2rem;
-  }
-  .footer--img {
-    height: 3rem;
   }
   .footer__social {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 3%;
+    bottom: 15%;
   }
   .footer__icon {
     height: 2rem;
@@ -255,9 +315,9 @@ a {
 
 .wsp__button {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 5%;
+  width: 40px;
+  height: 40px;
+  bottom: 1%;
   right: 2.5%;
   z-index: 3;
   cursor: pointer;

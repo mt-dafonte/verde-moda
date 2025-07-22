@@ -3,11 +3,19 @@
 
 
 .footer {
+  height: 100px;
+  padding: 20px;
+  margin-top: 50px;
   background-color: $dark-color;
   color: $neutral-color;
-  padding: 3rem;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+
+  @media (max-width: 768px) {
+    height: 7rem;
+    
+  }
 
   &__title {
     padding-bottom: 2rem;
@@ -24,7 +32,8 @@
   }
 
   &__text {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: .75rem;
 
   }
 
@@ -35,15 +44,33 @@
     display: flex;
     justify-content: center;
 
-    &__img {
-      height: 7rem;
+    @media (max-width: 768px) {
+      width: 4.3rem;
+      height: 4.3rem;
+      background-color: $terciary-color;
+      border-radius: 50%;
+      align-items: center;
+      margin: auto;
+      position: relative;
+      bottom: 8.5rem;    
+    }
+
+    &--img {
+      height: 3rem;
       cursor: pointer;
     }
 
     &:hover {
       transform: scale(1.1);
     }
+
+
+
+
   }
+
+
+
 
   &__social {
     width: 33%;
@@ -53,7 +80,7 @@
   }
 
   &__icon {
-    height: 3rem;
+    height: 1.5rem;
     margin-left: 1.5rem;
     cursor: pointer;
 
@@ -64,8 +91,19 @@
 
   &__copyright {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
+    font-size: 0.75rem;
+    position: relative;
+    bottom: 20px;
+
+    @media (max-width: 768px) {
+      position: relative;
+      bottom: 5rem;
+      color: $dark-color;
+      padding-bottom: 1rem;
+      
+    }
   }
 
   @media (max-width: 768px) {
@@ -74,17 +112,16 @@
     }
 
     &__logo {
-      width: 100%;
-      margin-bottom: 2rem;
-    }
 
-    &--img {
-      height: 3rem;
+      margin-bottom: 2rem;
     }
 
     &__social {
       width: 100%;
-      justify-content: center;
+      justify-content: flex-end;
+      position: absolute;
+      right: 3%;
+      bottom: 15%;
     }
 
     &__icon {

@@ -5,8 +5,12 @@
 
 
 .header {
-    &__container {
+    width: 100%;
+    padding: 10px;
     background-color: $secondary-color;
+    margin-bottom: 50px;
+    
+    &__container {
     height: 9rem;
     display: flex;
     justify-content: center;

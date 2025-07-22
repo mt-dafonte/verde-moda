@@ -1,6 +1,7 @@
 @use '../abstracts/variables' as *;
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,15 @@
   font-family: $font-family-base
 }
 
+
+html {
+  background-image: url("../img/Flower-pattern.jpg");
+
+  background-position: top left;
+}
+
 a {
     text-decoration: none;
 }
+
+
