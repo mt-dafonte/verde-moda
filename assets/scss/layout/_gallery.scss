@@ -16,13 +16,16 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
     align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: .75rem;
+    }
   }
 
   &__img {
     width: 100%;
     aspect-ratio: 3/4;
     object-fit: cover;
-
   }
-
-}
+}  
